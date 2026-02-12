@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammadhossein Haajihosseini - Resume</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Lato:wght@400;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Lato', sans-serif;
+            font-size: 10pt;
+            line-height: 1.6;
+            color: #000;
+            background: #fff;
+            padding: 1.5cm 1.25cm;
+            max-width: 210mm;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            font-family: 'Roboto Slab', serif;
+            font-size: 2.5em;
+            font-weight: 700;
+            margin-bottom: 0.2em;
+            color: #000;
+        }
+        
+        h2 {
+            font-family: 'Roboto Slab', serif;
+            font-size: 1.5em;
+            font-weight: 400;
+            margin-bottom: 1em;
+            color: #000;
+        }
+        
+        h3 {
+            font-family: 'Roboto Slab', serif;
+            font-size: 1.3em;
+            font-weight: 700;
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+            color: #000;
+            border-bottom: 2px solid #000;
+            padding-bottom: 0.3em;
+        }
+        
+        h4 {
+            font-family: 'Roboto Slab', serif;
+            font-size: 1.1em;
+            font-weight: 700;
+            margin-top: 1em;
+            margin-bottom: 0.3em;
+            color: #000;
+        }
+        
+        .header-info {
+            font-size: 0.9em;
+            margin-bottom: 1.5em;
+            line-height: 1.8;
+        }
+        
+        .header-info a {
+            color: #000;
+            text-decoration: none;
+        }
+        
+        .header-info a:hover {
+            text-decoration: underline;
+        }
+        
+        .two-column {
+            display: grid;
+            grid-template-columns: 60% 40%;
+            gap: 1.2cm;
+            margin-top: 1em;
+        }
+        
+        .left-column {
+            grid-column: 1;
+        }
+        
+        .right-column {
+            grid-column: 2;
+        }
+        
+        .experience-item, .education-item, .project-item {
+            margin-bottom: 1.5em;
+        }
+        
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 0.5em;
+        }
+        
+        .item-title {
+            font-weight: 700;
+            font-size: 1.1em;
+        }
+        
+        .item-title a {
+            color: #000;
+            text-decoration: none;
+        }
+        
+        .item-title a:hover {
+            text-decoration: underline;
+        }
+        
+        .item-meta {
+            font-size: 0.9em;
+            color: #666;
+            text-align: right;
+            white-space: nowrap;
+        }
+        
+        .item-location {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 0.2em;
+        }
+        
+        ul {
+            list-style: none;
+            padding-left: 0;
+            margin-top: 0.5em;
+        }
+        
+        ul li {
+            padding-left: 1.2em;
+            margin-bottom: 0.4em;
+            position: relative;
+        }
+        
+        ul li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #000;
+        }
+        
+        .skills-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.3em;
+        }
+        
+        .skills-list li {
+            padding-left: 1.2em;
+        }
+        
+        .divider {
+            border-top: 1px solid #ccc;
+            margin: 1em 0;
+        }
+        
+        .interests-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.3em;
+        }
+        
+        @media print {
+            body {
+                padding: 0;
+            }
+            
+            .two-column {
+                page-break-inside: avoid;
+            }
+        }
+        
+        @media screen and (max-width: 768px) {
+            .two-column {
+                grid-template-columns: 1fr;
+            }
+            
+            .item-header {
+                flex-direction: column;
+            }
+            
+            .item-meta {
+                text-align: left;
+                margin-top: 0.3em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mohammadhossein Haajihosseini</h1>
+        <h2>Software Engineer</h2>
+        <div class="header-info">
+            <strong>Email:</strong> <a href="mailto:soldier.mh.2001@gmail.com">soldier.mh.2001@gmail.com</a><br>
+            <strong>Phone:</strong> (+98)9135244700<br>
+            <strong>Location:</strong> Tehran, Iran<br>
+            <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/mohammadhossein-haajihosseini-4362961b9/">mohammadhossein-haajihosseini-4362961b9/</a><br>
+            <strong>GitHub:</strong> <a href="https://github.com/saamTheSoldier">saamTheSoldier</a>
+        </div>
+    </header>
+
+    <div class="two-column">
+        <div class="left-column">
+            <section>
+                <h3>Summary</h3>
+                <p>Software Engineer with 3.5 years of experience in full-stack development, working with Java Spring Boot, ASP.NET Core, Entity Framework, and SQL-based databases. Passionate about clean architecture and building maintainable. Experienced in adapting to large, complex projects and capable of designing internal software components tailored to specific requirements.</p>
+            </section>
+
+            <section>
+                <h3>Education</h3>
+                <div class="education-item">
+                    <div class="item-header">
+                        <div>
+                            <div class="item-title">B.Sc. Computer Engineering</div>
+                            <div class="item-location">Sharif University Of Technology, Tehran</div>
+                        </div>
+                        <div class="item-meta">Oct. 2020 -- ONGOING</div>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="education-item">
+                    <div class="item-header">
+                        <div>
+                            <div class="item-title">Physics & Mathematics Diploma</div>
+                            <div class="item-location">Sadat School, Isfahan</div>
+                        </div>
+                        <div class="item-meta">Oct. 2018 -- Oct. 2020</div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h3>Experience</h3>
+                <div class="experience-item">
+                    <div class="item-header">
+                        <div>
+                            <div class="item-title"><a href="https://www.sharif.edu/">Research Assistant (AI Projects)</a></div>
+                            <div class="item-location">Sharif University of Technology, Tehran</div>
+                        </div>
+                        <div class="item-meta">Apr. 2025 - present<br>(10 mos)</div>
+                    </div>
+                    <ul>
+                        <li>Collaborated with university professors on AI-related software projects, contributing to research initiatives and development efforts.</li>
+                        <li>Developed SSO (Single Sign-On) authentication system using Python.</li>
+                        <li>Reviewed, modified, and customized open-source AI platforms including <a href="https://dify.ai/">Dify.ai</a>, <a href="https://openwebui.com/">Open WebUI</a>, and <a href="https://mindsdb.com/">MindsDB</a> to meet project requirements.</li>
+                        <li>Worked full-stack using Svelte for frontend and Python (FastAPI) for backend development in customizing these platforms.</li>
+                    </ul>
+                </div>
+                <div class="divider"></div>
+                <div class="experience-item">
+                    <div class="item-header">
+                        <div>
+                            <div class="item-title"><a href="https://iais.ir/">Software Engineer (.NET)</a></div>
+                            <div class="item-location">IAIS, Tehran</div>
+                        </div>
+                        <div class="item-meta">Jun. 2024 - present<br>(10 mos)</div>
+                    </div>
+                    <ul>
+                        <li>Quickly adapted to and mastered a new programming language, showcasing the ability to efficiently learn and apply new technologies in a professional setting.</li>
+                        <li>Designed and implemented financial systems tailored to specific client requirements, ensuring precision, scalability, and alignment with industry standards.</li>
+                        <li>Collaborated with cross-functional teams to deliver high-quality solutions, maintaining clear communication and problem-solving skills.</li>
+                        <li>Designed and developed a domain-specific language (DSL) to enable seamless interaction between accounting personnel and the custom-built financial system.</li>
+                        <li>Promoted and facilitated the adoption of Scrum methodology, task management practices, and organizational workflows to enhance team productivity and collaboration across the company.</li>
+                    </ul>
+                </div>
+                <div class="divider"></div>
+                <div class="experience-item">
+                    <div class="item-header">
+                        <div>
+                            <div class="item-title"><a href="https://mahsan.co/">Android Core Developer</a></div>
+                            <div class="item-location">Mahsan, Tehran</div>
+                        </div>
+                        <div class="item-meta">Dec. 2023 - Jun. 2024<br>(6 mos)</div>
+                    </div>
+                    <ul>
+                        <li>Contributed to the development of a secure Android ROM using AOSP.</li>
+                        <li>Leveraged Java, C++, and Kotlin for software development.</li>
+                        <li>Engaged in collaborative problem-solving within the open-source community.</li>
+                        <li>Proposed and implemented a creative bug fix for emergency calling on Android 14 for Pixel phones, showcasing problem-solving skills and initiative.</li>
+                        <li>Developed and integrated a new feature into Android 14, enabling users to share VPN upstream network via tethering, demonstrating innovation and technical proficiency.</li>
+                    </ul>
+                </div>
+                <div class="divider"></div>
+                <div class="experience-item">
+                    <div class="item-header">
+                        <div>
+                            <div class="item-title"><a href="https://www.behpaya.com/fa/">Software Engineer</a></div>
+                            <div class="item-location">Behpaya, Tehran</div>
+                        </div>
+                        <div class="item-meta">Jul. 2023 - Oct. 2023<br>(4 mos)</div>
+                    </div>
+                    <ul>
+                        <li>Developed robust REST APIs using Spring Boot and Hibernate.</li>
+                        <li>Collaborated on the development of "Moein," an integrated operation monitoring system.</li>
+                        <li>Utilized ClickHouse for big data management.</li>
+                    </ul>
+                </div>
+                <div class="divider"></div>
+                <div class="experience-item">
+                    <div class="item-header">
+                        <div>
+                            <div class="item-title"><a href="https://sobhan.tech/">Junior Back-end Developer</a></div>
+                            <div class="item-location">SobhanTech, Isfahan</div>
+                        </div>
+                        <div class="item-meta">Nov. 2021 - Mar. 2023<br>(17 mos)</div>
+                    </div>
+                    <ul>
+                        <li>Managed SQL database using Hibernate and JPA.</li>
+                        <li>Contributed to a messenger app server with 30 million users.</li>
+                        <li>Implemented essential voice call features for the messenger server-side.</li>
+                        <li>Explored software architecture with AKKA toolkit. Got familiar with Actor Model.</li>
+                    </ul>
+                </div>
+                <div class="divider"></div>
+                <div class="experience-item">
+                    <div class="item-header">
+                        <div>
+                            <div class="item-title"><a href="https://sobhan.tech/">Software Engineer Intern</a></div>
+                            <div class="item-location">SobhanTech, Isfahan</div>
+                        </div>
+                        <div class="item-meta">Jul. 2021 - Nov. 2021<br>(5 mos)</div>
+                    </div>
+                    <ul>
+                        <li>Developed RESTful APIs using Spring framework.</li>
+                        <li>Utilized Spring Data for database management.</li>
+                        <li>Implemented authentication with Spring Security.</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+        <div class="right-column">
+            <section>
+                <h3>Achievements</h3>
+                <div class="experience-item">
+                    <div class="item-header">
+                        <div>
+                            <div class="item-title">University Entrance Exam</div>
+                            <div class="item-location">Mathematics and Physics, Iran</div>
+                        </div>
+                        <div class="item-meta">Jul. 2020</div>
+                    </div>
+                    <p>Ranked 130<sup>th</sup> among 155,250 participants.</p>
+                </div>
+            </section>
+
+            <section>
+                <h3>Motivation</h3>
+                <p>Seeking a long-term commitment with a company that values growth and teamwork. Passionate about deep learning, problem-solving, and creative challenges, aiming to contribute, grow, and evolve in a supportive environment.</p>
+            </section>
+
+            <section>
+                <h3>Skills</h3>
+                <h4>Main Skills</h4>
+                <ul class="skills-list">
+                    <li>Spring Boot</li>
+                    <li>Java</li>
+                    <li>C#</li>
+                    <li>ASP .NET</li>
+                    <li>AOSP</li>
+                    <li>C & C++</li>
+                    <li>AKKA</li>
+                    <li>SQL</li>
+                    <li>Git</li>
+                    <li>Linux command-line</li>
+                </ul>
+                <h4>Other Skills</h4>
+                <ul class="skills-list">
+                    <li>VIM</li>
+                    <li>Python</li>
+                    <li>Svelte</li>
+                    <li>FastAPI</li>
+                    <li>Algorithm & Data Structures</li>
+                    <li>Object-Oriented Concepts and Design Patterns</li>
+                    <li>Debugging & Testing</li>
+                    <li>Network Protocols</li>
+                    <li>Various Software Architectures</li>
+                    <li>HDL: Verilog</li>
+                    <li>LaTeX</li>
+                    <li>JetBrains IDEs</li>
+                    <li>GitLab, Confluence, Jira</li>
+                    <li>Effective Searching</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Interests</h3>
+                <ul class="interests-list">
+                    <li>Learning</li>
+                    <li>Challenges & Problem Solving</li>
+                    <li>Software Design and Development</li>
+                    <li>Low-Level Programming</li>
+                    <li>Software Architecture</li>
+                    <li>Theoretical Exploration</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Languages</h3>
+                <p><strong>English:</strong> Upper-Intermediate</p>
+                <p><strong>Persian:</strong> Fluent</p>
+                <p><strong>Arabic:</strong> Elementary</p>
+            </section>
+
+            <section>
+                <h3>Projects</h3>
+                <div class="project-item">
+                    <div class="item-header">
+                        <div>
+                            <div class="item-title"><a href="https://github.com/Advanced-Programming-2021/project-team-28">Yu-Gi-Oh</a></div>
+                            <div class="item-location">Advanced Programming Course Project</div>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>Developed a server-client game using Java and JavaFX.</li>
+                        <li>Showcased teamwork and problem-solving skills.</li>
+                    </ul>
+                </div>
+                <div class="divider"></div>
+                <div class="project-item">
+                    <div class="item-header">
+                        <div>
+                            <div class="item-title"><a href="https://github.com/saamTheSoldier/xv6-FFS">XV6 FFS</a></div>
+                            <div class="item-location">Operating System Course Project</div>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>Added Fast File System(FFS) to XV6 Operating System.</li>
+                        <li>Implemented in C programming language.</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

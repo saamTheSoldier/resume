@@ -1,0 +1,218 @@
+\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+\usepackage{pgfcalendar}  % For date calculations
+\usepackage{pgfmath}      % For math operations
+
+\usepackage{paracol}
+\usepackage[super]{nth}
+
+\ifxetexorluatex
+\setmainfont{Roboto Slab}
+\setsansfont{Lato}
+\renewcommand{\familydefault}{\sfdefault}
+\else
+\usepackage[rm]{roboto}
+\usepackage[defaultsans]{lato}
+\renewcommand{\familydefault}{\sfdefault}
+\fi
+
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{450808}
+\definecolor{PastelRed}{HTML}{8F0D0D}
+\definecolor{GoldenEarth}{HTML}{E7D192}
+\definecolor{divide}{HTML}{5FA8D2}
+\definecolor{shcol}{HTML}{5FA8D2}%50ABE4
+\definecolor{hcol}{HTML}{5FA8D2}
+\definecolor{ncol}{HTML}{5A849F}
+
+\colorlet{name}{black}
+\colorlet{tagline}{black}
+\colorlet{heading}{black}
+\colorlet{headingrule}{black}
+\colorlet{subheading}{black}
+\colorlet{accent}{black}
+\colorlet{emphasis}{black}
+\colorlet{body}{black}
+
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+\input{pubs-num}
+
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Mohammadhossein Haajihosseini}
+\tagline{\textcolor{black}{Software Engineer}}
+
+\personalinfo{%
+\email{soldier.mh.2001@gmail.com}
+\phone{(+98)9135244700}
+\location{Tehran, Iran}
+\linkedin{mohammadhossein-haajihosseini-4362961b9/}
+\github{saamTheSoldier}
+}
+
+\makecvheader
+
+\columnratio{0.6}
+
+\begin{paracol}{2}
+
+\cvsection{Summary}
+
+Software Engineer with 3.5 years of experience in full-stack development, working with Java Spring Boot, ASP.NET Core, Entity Framework, and SQL-based databases. Passionate about clean architecture and building maintainable. Experienced in adapting to large, complex projects and capable of designing internal software components tailored to specific requirements.
+
+\cvsection{Education}
+
+\cvevent{B.Sc.\ Computer Engineering}{Sharif University Of Technology}{Oct. 2020 -- ONGOING}{Tehran}
+\divider
+
+\cvevent{Physics \& Mathematics Diploma}{Sadat School}{Oct. 2018 -- Oct. 2020}{Isfahan}
+
+\cvsection{Experience}
+
+\cvevent{Research Assistant (AI Projects)}{\href{https://www.sharif.edu/}{Sharif University of Technology}}{Apr. 2025 - present (10 mos)}{Tehran}
+\begin{itemize}
+\item Collaborated with university professors on AI-related software projects, contributing to research initiatives and development efforts.
+\item Developed SSO (Single Sign-On) authentication system using Python.
+\item Reviewed, modified, and customized open-source AI platforms including Dify.ai, Open WebUI, and MindsDB to meet project requirements.
+\item Worked full-stack using Svelte for frontend and Python (FastAPI) for backend development in customizing these platforms.
+\end{itemize}
+
+\divider
+\cvevent{Software Engineer (.NET)}{\href{https://iais.ir/}{IAIS}}{Jun. 2024 - present (10 mos)}{Tehran}
+\begin{itemize}
+\item Quickly adapted to and mastered a new programming language, showcasing the ability to efficiently learn and apply new technologies in a professional setting.
+\item Designed and implemented financial systems tailored to specific client requirements, ensuring precision, scalability, and alignment with industry standards.
+\item Collaborated with cross-functional teams to deliver high-quality solutions, maintaining clear communication and problem-solving skills.
+\item Designed and developed a domain-specific language (DSL) to enable seamless interaction between accounting personnel and the custom-built financial system.
+\item Promoted and facilitated the adoption of Scrum methodology, task management practices, and organizational workflows to enhance team productivity and collaboration across the company.
+\end{itemize}
+
+\divider
+\cvevent{Android Core Developer}{\href{https://mahsan.co/}{Mahsan}}{Dec. 2023 - Jun. 2024 (6 mos)}{Tehran}
+\begin{itemize}
+\item Contributed to the development of a secure Android ROM using AOSP.
+\item Leveraged Java, C++, and Kotlin for software development.
+\item Engaged in collaborative problem-solving within the open-source community.
+\item Proposed and implemented a creative bug fix for emergency calling on Android 14 for Pixel phones, showcasing problem-solving skills and initiative.
+\item Developed and integrated a new feature into Android 14, enabling users to share VPN upstream network via tethering, demonstrating innovation and technical proficiency.
+\end{itemize}
+
+\divider
+
+\cvevent{Software Engineer}{\href{https://www.behpaya.com/fa/}{Behpaya}}{Jul. 2023 - Oct. 2023 (4 mos)}{Tehran}
+\begin{itemize}
+\item Developed robust REST APIs using Spring Boot and Hibernate.
+\item Collaborated on the development of "Moein," an integrated operation monitoring system.
+\item Utilized ClickHouse for big data management.
+\end{itemize}
+
+\divider
+
+\cvevent{Junior Back-end Developer}{\href{https://sobhan.tech/}{SobhanTech}}{Nov. 2021 - Mar. 2023 (17 mos)}{Isfahan}
+\begin{itemize}
+\item Managed SQL database using Hibernate and JPA.
+\item Contributed to a messenger app server with 30 million users.
+\item Implemented essential voice call features for the messenger server-side.
+\item Explored software architecture with AKKA toolkit. Got familiar with Actor Model.
+\end{itemize}
+
+\divider
+
+\cvevent{Software Engineer Intern}{\href{https://sobhan.tech/}{SobhanTech}}{Jul. 2021 - Nov. 2021 (5 mos)}{Isfahan}
+\begin{itemize}
+\item Developed RESTful APIs using Spring framework.
+\item Utilized Spring Data for database management.
+\item Implemented authentication with Spring Security.
+\end{itemize}
+
+\switchcolumn
+
+\cvsection{Achievements}
+
+\cvevent{University Entrance Exam}{Mathematics and Physics}{Jul. 2020}{Iran}
+Ranked \nth{130} among 155,250 participants.
+
+\cvsection{Motivation}
+
+ Seeking a long-term commitment with a company that values growth and teamwork. Passionate about deep learning, problem-solving, and creative challenges, aiming to contribute, grow, and evolve in a supportive environment.
+
+\cvsection{Skills}
+
+\cvsubsection{Main Skills}
+\begin{itemize}
+\item Spring Boot
+\item Java
+\item C\#
+\item  ASP .NET 
+\item AOSP
+\item C \& C++
+\item AKKA
+\item SQL
+\item Git
+\item Linux command-line
+\end{itemize}
+
+\cvsubsection{Other Skills}
+\begin{itemize}
+\item VIM
+\item Python
+\item Svelte
+\item FastAPI
+\item Algorithm \& Data Structures
+\item Object-Oriented Concepts and Design Patterns
+\item Debugging \& Testing
+\item Network Protocols
+\item Various Software Architectures
+\item HDL: Verilog
+\item \LaTeX
+\item JetBrains IDEs
+\item GitLab, Confluence, Jira
+\item Effective Searching
+\end{itemize}
+
+\cvsection{Interests}
+
+\begin{itemize}
+\item Learning
+\item Challenges \& Problem Solving
+\item Software Design and Development
+\item Low-Level Programming
+\item Software Architecture
+\item Theoretical Exploration
+\end{itemize}
+
+\cvsection{Languages}
+
+\textbf{English:}\quad\quad Upper-Intermediate \\
+
+\textbf{Persian:}\quad\quad Fluent \\
+
+\textbf{Arabic: }\quad\quad Elementary
+
+\cvsection{Projects}
+
+\cvevent{\href{https://github.com/Advanced-Programming-2021/project-team-28}{Yu-Gi-Oh}}{Advanced Programming Course Project}{}{}
+\begin{itemize}
+\item Developed a server-client game using Java and JavaFX.
+\item Showcased teamwork and problem-solving skills.
+\end{itemize}
+
+\cvevent{\href{https://github.com/saamTheSoldier/xv6-FFS}{XV6 FFS}}{Operating System Course Project}{}{}
+\begin{itemize}
+\item Added Fast File System(FFS) to XV6 Operating System.
+\item Implemented in C programming language.
+\end{itemize}
+
+\end{paracol}
+
+\end{document}
